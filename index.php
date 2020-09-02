@@ -9,9 +9,11 @@
 
   <link href="https://fonts.googleapis.com/css?family=Arizonia|Montserrat:400,500,600,700|Roboto+Condensed&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link rel="shortcut icon" href="assets/img/logo.png">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/portfolio.css">
+  
 
   <title>Dlas,</title>
 </head>
@@ -41,12 +43,12 @@
   <!-- HEADING -->
   <div class="heading global-heading">
     <div class="heading__logo">
-      <a href="index.html" class="heading__logo-name">Dlas<span class="dot">,</span></a>
+     <img src="assets/img/logo.png">
     </div>
 
     <div class="heading__text">
       <h2 class="heading__text-1">Lasri douae<span class="dot">,</span></h2>
-      <h3 class="heading__text-2">Designer <span class="dot-1">&</span> Developer</h3>
+      <h3 class="heading__text-2">Developer <span class="dot-1">&</span> Developer</h3>
     </div>
   </div>
 
@@ -54,13 +56,13 @@
     <div class="id">
       <div class="id__info">
         <p class="id__info-text">
-          Hey, I'm Lasri douae and <span class="dot-1">I am a designer & developer</span> </br>who dream making the world a better place</br> by creating captivating products.
+          Hey, I'm Lasri douae and <span class="dot-1">I am a designer & developer</span> </br> I design and code beautifully simple things, </br> and I love what I do.
         </p>
         <span class="id__info-name">Lasri douae</span>
       </div>
     </div>
- <!-- PORTFOLIO -->
- <div class="port">
+    <!-- PORTFOLIO -->
+    <div class="container">
       <div class="port__header">
         <h2 class="port__header-h2">Portfolio</h2>
         <p class="port__header-paragraph">
@@ -68,25 +70,23 @@
           it will lead to other good work for other good clients.
         </p>
         </div>
-        <div class="port__container">
-      <?php $sql = "SELECT * FROM portfolio";
+ <div class="row">
+          <?php $sql = "SELECT * FROM portfolio";
              $result = mysqli_query($conn,$sql);
                while ($row = mysqli_fetch_assoc($result)) :?>
 
-                <div class="col-md-4 col-xs-6">
-          <div class="portfolio-item">
-     <img src="assets/img/<?php echo $row['projectpic']?>" class="img-res" alt="">
+    <div class="col-md-4 col-xs-6">
+    <div class="portfolio-item">
+           <img src="assets/img/<?php echo $row['projectpic']?>" class="img-res" alt="">
         <div class="portfolio-item-info" title="<?php echo $row['projectname']?>">
-        
- <a href="assets/img/<?php echo $row['projectpic']?>" data-toggle="modal" data-target="#portfolioItem1"><span class="glyphicon glyphicon-eye-open"></span></a>
- <a href="<?php echo $row['projectlink']?>" ><span class="glyphicon glyphicon-link"></span></a>
+        <a href="assets/img/<?php echo $row['projectpic']?>" data-toggle="modal" data-target="#portfolioItem1"><span class="glyphicon glyphicon-eye-open"></span></a>
+          <a href="<?php echo $row['projectlink']?>" ><span class="glyphicon glyphicon-link"></span></a>
          </div>
      </div>
      </div>
                  <?php endwhile ?>
-      </div>
-            </div>
-
+  </div>
+ </div>
 
 
     <!-- Footer -->
@@ -120,11 +120,19 @@
       <div class="footer__logo">
         <div class="heading__logo-name">Dlas<span class="dot">,</span></div>
       </div>
+  
+      <!-- <button class="footer__btn">Contact US!</button> -->
+      <ul class="lang">
+        <li>
+      <a href="#" class="lang_sp"  ></a> <img src="https://demo.neontheme.com/assets/images/flags/flag-fr.png" width="24">
+    </li>
+    <li>
+      <a href="#" class="lang_sp" ></a> <img src="https://demo.neontheme.com/assets/images/flags/flag-uk.png" width="24">
+    </li>
+    </ul>
 
-
-      <p class="footer__rights">2020 © Lasri Douae. All rights reserved.</p>
+      <p class="footer__rights">2020 © Lasri Douae, All rights reserved.</p>
 
     </footer>
-
 </body>
 </html>

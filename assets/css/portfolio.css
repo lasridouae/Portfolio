@@ -1,14 +1,12 @@
 
-/* Section: Portfolio */
-.section-portfolio {
+/* .section-portfolio {
     padding-bottom: 120px;
-}
+} */
 
 .portfolio-item {
     height: 280px;
     margin-bottom: 30px;
-    position: relative;
-}
+    position: relative;}
 
 .section-portfolio .col-md-4:nth-last-child(-n+3) .portfolio-item {
     margin-bottom: 0;
@@ -131,6 +129,7 @@
 .modal-footer {
     text-align: center;
 }
+
 
 
 

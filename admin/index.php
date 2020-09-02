@@ -25,10 +25,11 @@ $row= mysqli_fetch_assoc($result);
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Arizonia|Montserrat:400,500,600,700|Roboto+Condensed&display=swap" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> -->
+
 
   <!-- Custom styles for this template-->
   <link href="css/Dashboard.css" rel="stylesheet">
+  <link href="assets/dist/css/bootstrap.css" rel="stylesheet">
 
 </head>
 
@@ -41,9 +42,9 @@ $row= mysqli_fetch_assoc($result);
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
-        <div class="sidebar-brand-icon rotate-n-15">
+        <!-- <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
-        </div>
+        </div> -->
        <img src="./img/logo.png" alt="">
       </a>
 
@@ -62,12 +63,12 @@ $row= mysqli_fetch_assoc($result);
 
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <!-- <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link" href="../admin/">
           <span data-feather="home"></span>
         Home
         </a>
-      </li> -->
+      </li> 
       <!-- Nav Item - Portfolio -->
       <li class="nav-item">
         <a class="nav-link" href="?editportfolio=true">
@@ -105,7 +106,7 @@ $row= mysqli_fetch_assoc($result);
       <div id="content">
          <!-- Topbar -->
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-         <!-- Sidebar Toggle (Topbar) -->
+         <!-- Sidebar Toggle "Topbar" -->
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
             <i class="fa fa-bars"></i>
           </button>
@@ -113,23 +114,22 @@ $row= mysqli_fetch_assoc($result);
           <ul class="navbar-nav ml-auto">
             <div class="topbar-divider d-none d-sm-block"></div>
             <!-- Nav Item - User Information -->
-            <li class="nav-item dropdown no-arrow">
+            <li class="nav-item dropdown        no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Lasri douae</span>
-                <img class="img-profile rounded-circle" src="">
+                <img class="img-profile rounded-circle" src="img/about.jpg">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-              <ul class="navbar-nav px-3">
-    <li class="nav-item text-nowrap">
-      <a class="nav-link" href="php/logout.php">Logout</a>
-    </li>
-  </ul>
-            </li>
-
-          </ul>
+              <a class="nav-link"class="dropdown-item" href="php/logout.php">Logout
+            </a>
+              </div>
+           </li>
+     </ul>
 
         </nav>
+ 
+      
         <!-- End of Topbar -->
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
    <?php
@@ -174,6 +174,7 @@ $row= mysqli_fetch_assoc($result);
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <!-- Custom scripts for all pages-->
   <script src="js/admin.min.js"></script>
 

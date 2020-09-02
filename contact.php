@@ -39,8 +39,8 @@
 
   <!-- HEADING -->
   <div class="heading" id="global-heading">
-    <div class="heading__logo">
-      <a href="#" class="heading__logo-name">Dlas<span class="dot">,</span></a>
+  <div class="heading__logo">
+     <img src="assets/img/logo.png">
     </div>
   </div>
 
@@ -52,13 +52,15 @@
           If you do good work for good clients,</br>
           it will lead to other good work for other good clients.
         </p>
-        <form>
-            <div class="row">
-                <div class="col-sm-6">
-                    <input type="text" name="name" class="form-control mt-x-0" placeholder="Name" required>
+        <form action="include/message.php" method="post" role="form" class="php-email-form">
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <input type="text" name="name" class="form-control mt-x-0" placeholder="Name" required">
+                    <div class="validate"></div>
                 </div>
                 <div class="col-sm-6">
-                    <input type="email" name="email" class="form-control" placeholder="Email" required>   
+                    <input type="email" name="email" class="form-control" placeholder="Email" data-rule="email" required"> 
+                    <div class="validate"></div>  
                 </div>
                 <div class="col-sm-12">
                     <textarea name="message" id="mesaage" class="form-control" placeholder="Message" required></textarea>
@@ -69,6 +71,7 @@
     </div>
 </section><!-- /.section-form -->
 
+  
     <!-- Footer -->
     <footer class="footer">
       <ul class="footer__list">
@@ -100,11 +103,19 @@
       <div class="footer__logo">
         <div class="heading__logo-name">Dlas<span class="dot">,</span></div>
       </div>
-
+  
+      <!-- <button class="footer__btn">Contact US!</button> -->
+      <ul class="lang">
+        <li>
+      <a href="#" class="lang_sp"  ></a> <img src="https://demo.neontheme.com/assets/images/flags/flag-fr.png" width="24">
+    </li>
+    <li>
+      <a href="#" class="lang_sp" ></a> <img src="https://demo.neontheme.com/assets/images/flags/flag-uk.png" width="24">
+    </li>
+    </ul>
 
       <p class="footer__rights">2020 © Lasri Douae, All rights reserved.</p>
 
     </footer>
-
 </body>
 </html>
