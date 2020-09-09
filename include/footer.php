@@ -33,10 +33,10 @@
       <!-- <button class="footer__btn">Contact US!</button> -->
       <ul class="lang">
         <li>
-      <a href="index.php?la=fr" class="lang_sp"> <img src="https://demo.neontheme.com/assets/images/flags/flag-fr.png" width="24"></a> 
+      <a href="index.php?la=fr" ><img src="https://demo.neontheme.com/assets/images/flags/flag-fr.png"class="lang_sp" width="24"></a> 
     </li>
     <li>
-      <a href="index.php?la=en" class="lang_sp"><img src="https://demo.neontheme.com/assets/images/flags/flag-uk.png" width="24"></a> 
+      <a href="index.php?la=en" ><img src="https://demo.neontheme.com/assets/images/flags/flag-uk.png" class="lang_sp"width="24"></a> 
     </li>
     </ul>
 
