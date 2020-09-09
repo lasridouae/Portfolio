@@ -228,7 +228,7 @@ a {
       
     }
     .lang_sp:not(:last-child){
-      margin-right: 1rem;
+      margin-right: 2rem;
     }
     .lang_sp:hover {
       transform: translateY(-5px); }

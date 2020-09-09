@@ -73,7 +73,7 @@ $row= mysqli_fetch_assoc($result);
       <li class="nav-item">
         <a class="nav-link" href="?editportfolio=true">
           <span data-feather="archive"></span>
-          Edit Portfolio
+          Portfolio
         </a>
       </li>
       <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">

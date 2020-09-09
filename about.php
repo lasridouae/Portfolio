@@ -1,3 +1,4 @@
+<?php include('./include/db.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,63 +15,41 @@
 <body>
   <!-- Navigation Bar -->
 
-  <div class="navigation">
-    <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
-
-    <label for="nav-toggle" class="navigation__button">
-      <span class="navigation__icon">&nbsp;</span>
-    </label>
-
-    <div class="navigation__background">&nbsp;</div>
-
-    <nav class="navigation__nav">
-      <ul class="navigation__list">
-        <li class="navigation__item"><a href="index.php" class="navigation__link">Home</a></li>
-        <li class="navigation__item"><a href="about.php" class="navigation__link">About</a></li>
-        <li class="navigation__item"><a href="portfolio.php" class="navigation__link">Portfolio</a></li>
-        <li class="navigation__item"><a href="contact.php" class="navigation__link">Contact</a></li>
-      </ul>
-    </nav>
-
-  </div>
-
-  <!-- HEADING -->
-  <div class="heading" id="global-heading">
-  <div class="heading__logo">
-     <img src="assets/img/logo.png">
-    </div>
-  </div>
+  <?php include('./include/nav.php'); ?>
 
     <!-- About Section -->
     <div class="about">
       <div class="about__container">
         <div class="about__photo">
-          <img src="assets/img/about.jpg" alt="About image" class="about__image">
+          <img src="assets/img/about.png" alt="About image" class="about__image">
         </div>
 
         <div class="about__content">
-          <h2 class="about__h2">About Me</h2>
+          <h2 class="about__h2"><?= $titre3?></h2>
           <p class="about__paragraph">
-            Hey, I am Lasri Douae. A full stack web developer & designer originally from safi and based in youssoufia , Morocco . My skills front-end to back-end development. I enjoy coding 
+         <?= $p4?>
            
           </p>
 
           <p class="about__paragraph">
-            Proin bibendum, risus et laoreet tristique, dolor nisl venenatis nisl, at pulvinar orci odio nec est. Vivamus volutpat scelerisque eros eget euismod. Ut egestas pulvinar arcu sed fermentum. Sed non mauris sedthint augue porta commodo. Phasellus the besting rhoncus vestibulum nulla quis suscipit.
+          <?= $p5?>
           </p>
 
           <p class="about__paragraph">
-           who dream making the world a better place by creating captivating products.
+          <?= $p6?>
           </p>
 
           <span class="id__info-name">Lasri Douae</span>
         </div>
       </div>
+      </div>
+      
 
-    </div>
+<!-- Skills -->
+    
     <div class="skills-section">
       <div class="skills-header">
-       <h1>Skills</h1>   
+       <h1><?= $titre4?></h1>   
        </div>
        <div class="skills-container">
          
@@ -123,53 +102,10 @@
             </div>
 
 
+<!--footer--->
+<?php
+  include('./include/footer.php'); 
 
-    <!-- Footer -->
-    <footer class="footer">
-      <ul class="footer__list">
-        <li class="footer__item">
-          <a href="https://www.facebook.com/douae.lsr" class="footer__link">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </li>
-
-        <li class="footer__item">
-          <a href="https://www.linkedin.com/in/douae-lasri-55b42b17a/" class="footer__link">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-
-        <li class="footer__item">
-          <a href="https://www.instagram.com/douaelsr/" class="footer__link">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-
-        <li class="footer__item">
-          <a href="https://github.com/lasridouae" class="footer__link">
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-      </ul>
-
-      <div class="footer__logo">
-        <div class="heading__logo-name">Dlas<span class="dot">,</span></div>
-      </div>
-  
-      <!-- <button class="footer__btn">Contact US!</button> -->
-      <ul class="lang">
-        <li>
-      <a href="#" class="lang_sp"  ></a> <img src="https://demo.neontheme.com/assets/images/flags/flag-fr.png" width="24">
-    </li>
-    <li>
-      <a href="#" class="lang_sp" ></a> <img src="https://demo.neontheme.com/assets/images/flags/flag-uk.png" width="24">
-    </li>
-    </ul>
-
-      <p class="footer__rights">2020 © Lasri Douae, All rights reserved.</p>
-
-    </footer>
-
-
+?>
 </body>
 </html>

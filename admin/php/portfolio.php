@@ -45,6 +45,7 @@
 <table class="table table-striped table-sm">
           <thead>
             <tr>
+               
               <th>Project Image</th>
               <th>Project Name</th>
               <th>Action</th>

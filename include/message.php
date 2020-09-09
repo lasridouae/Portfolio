@@ -8,5 +8,8 @@ $sql="INSERT INTO contact (name , email, message) ";
 $sql.="VALUES('$name','$email','$message')";
 $result = mysqli_query($conn, $sql);
 if($result){
-    echo 'Your message has been sent. Thank you!';
+    header("location:../contact.php?success");
+} else
+{
+    header("location:../contact.php");
 }

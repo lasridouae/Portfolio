@@ -100,7 +100,7 @@
     height: 500px;
 }
 
-.modal-header .close {
+.modal .close {
     position: absolute;
     right: 0;
     padding: 10px 11px;
@@ -118,7 +118,7 @@
     -ms-transition: box-shadow 0.25s ease-in-out;
 }
 
-.modal-header .close:hover {
+.modal .close:hover {
     box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.2);
 }
 
